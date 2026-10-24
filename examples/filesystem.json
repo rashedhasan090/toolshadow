@@ -1,0 +1,32 @@
+{
+  "server": "filesystem",
+  "tools": [
+    {
+      "name": "read_file",
+      "description": "Read a file from the allowed directory and return its text.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "write_file",
+      "description": "Write text to a file in the allowed directory.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ]
+}
